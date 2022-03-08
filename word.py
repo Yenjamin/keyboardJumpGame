@@ -4,7 +4,10 @@ import filehandler
 
 class word():
     def __init__(self, wordSpeed):
-        self.wordSpeed = wordSpeed
+        if wordSpeed < 10:
+            self.wordSpeed = wordSpeed
+        else:
+            self.wordSpeed = 10
         #self.displayword = RandomWords().get_random_word()
         self.displayword = random.choice(filehandler.readfile())
     yourWord = ""
