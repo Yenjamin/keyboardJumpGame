@@ -10,6 +10,7 @@ class word():
             self.wordSpeed = 10
         #self.displayword = RandomWords().get_random_word()
         self.displayword = random.choice(filehandler.readfile())
+        self.x = random.randint(300,700)
     yourWord = ""
     x = random.randint(300,700)
     y = 200

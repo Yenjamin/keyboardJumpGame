@@ -48,3 +48,4 @@ rule
 fool
 hall
 read
+hello
